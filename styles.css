@@ -1,0 +1,150 @@
+b,strong {
+    font-weight: 600;
+}
+
+.post-password-form {
+    max-width: 400px;
+    margin: 10vh auto 30vh;
+    background: #cccccc7a;
+    padding: 50px;
+    border-radius: 10px;
+}
+
+.post-password-form input[type=submit] {
+    font-family: "Effra", Helvetica, Sans-serif;
+    font-weight: 600;
+    background-color: var(--e-global-color-primary );
+    border: none;
+}
+
+
+.hover_scale1_1 {
+    transition: all 500ms;
+}
+.hover_scale1_1:hover {
+    transform: scale(1.1);
+}
+
+.hover_scale1_3 {
+    transition: all 500ms;
+}
+.hover_scale1_3:hover {
+    transform: scale(1.3);
+}
+
+.management .page-header {
+    display: none;
+    opacity: 0;
+}
+
+
+
+#top-logo-container .elementor-shape.elementor-shape-top {
+    width: 200%;
+    animation: shape 15s ease-in-out infinite;
+}
+
+.add-pulse-scaleup {
+    animation: pulseup 10s ease-in-out infinite;
+}
+
+.add-pulse-scaledown {
+    animation: pulsedown 10s ease-in-out infinite;
+}
+
+.wiggle {
+  animation: wiggle 5s linear infinite;
+}
+.wiggle:hover, .add-pulse-scaledown:hover, .add-pulse-scaleup:hover {
+    animation-play-state: paused;
+}
+.flicker {
+    border: none;
+    color: #fff;
+    overflow: hidden;
+}
+.flicker:before {
+    position: absolute;
+    content: '';
+    display: inline-block;
+    top: -180px;
+    left: 0;
+    width: 30px;
+    height: 100%;
+    background-color: #fff;
+    animation: shiny-btn1 3s ease-in-out infinite;
+    z-index: 999;
+}
+
+.flicker4 {
+    border: none;
+    color: #fff;
+    overflow: hidden;
+}
+.flicker4:before {
+    position: absolute;
+    content: '';
+    display: inline-block;
+    top: -180px;
+    left: 0;
+    width: 30px;
+    height: 100%;
+    background-color: #fff;
+    animation: shiny-btn1 4s ease-in-out infinite;
+    z-index: 999;
+}
+
+@keyframes shape {
+    0% { left: 0;}
+    50% { left: -100%;}
+    100% { left: 0;}
+}
+
+@keyframes pulseup {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+    100% { transform: scale(1);  }
+}
+
+@keyframes pulsedown {
+    0% { transform: scale(1); }
+    50% { transform: scale(.9); }
+    100% { transform: scale(1);  }
+}
+
+@keyframes wiggle {
+  0%, 7% {
+    transform: rotateZ(0);
+  }
+  5% {
+    transform: rotateZ(-5deg);
+  }
+  10% {
+    transform: rotateZ(5deg);
+  }
+  15% {
+    transform: rotateZ(-5deg);
+  }
+  20% {
+    transform: rotateZ(5deg);
+  }
+  25% {
+    transform: rotateZ(-5deg);
+  }
+  30% {
+    transform: rotateZ(5deg);
+  }
+  35% {
+    transform: rotateZ(-5deg);
+  }
+  40%, 100% {
+    transform: rotateZ(0);
+  }
+}
+
+@-webkit-keyframes shiny-btn1 {
+    0% { -webkit-transform: scale(0) rotate(45deg); opacity: 0; }
+    80% { -webkit-transform: scale(0) rotate(45deg); opacity: 0.5; }
+    81% { -webkit-transform: scale(4) rotate(45deg); opacity: 1; }
+    100% { -webkit-transform: scale(50) rotate(45deg); opacity: 0; }
+}
